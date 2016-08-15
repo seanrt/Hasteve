@@ -44,6 +44,7 @@ GEM
       launchy (~> 2.4)
     gli (2.14.0)
     hashie (3.4.4)
+    hitimes (1.2.4)
     hitimes (1.2.4-x86-mingw32)
     i18n (0.7.0)
     json (2.0.2)
@@ -75,6 +76,7 @@ GEM
     websocket-extensions (0.1.2)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
