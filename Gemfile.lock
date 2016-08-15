@@ -29,6 +29,8 @@ GEM
     celluloid-supervision (0.20.6)
       timers (>= 4.1.1)
     concurrent-ruby (1.0.2)
+    domain_name (0.5.20160615)
+      unf (>= 0.0.5, < 1.0.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     faraday_middleware (0.9.2)
@@ -37,6 +39,7 @@ GEM
       faraday (~> 0.9.0)
       faraday_middleware (~> 0.9.1)
       oj (~> 2.0)
+    ffi (1.9.14-x86-mingw32)
     giphy (2.0.2)
       faraday (~> 0.9)
       faraday_middleware (~> 0.9)
@@ -46,14 +49,29 @@ GEM
     hashie (3.4.4)
     hitimes (1.2.4)
     hitimes (1.2.4-x86-mingw32)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
     i18n (0.7.0)
     json (2.0.2)
     launchy (2.4.3)
       addressable (~> 2.3)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     minitest (5.9.0)
     multipart-post (2.0.0)
+    netrc (0.11.0)
     nio4r (1.2.1)
     oj (2.17.1)
+    rest-client (2.0.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rest-client (2.0.0-x86-mingw32)
+      ffi (~> 1.9)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     slack-ruby-bot (0.8.2)
       giphy (~> 2.0.2)
       hashie
@@ -71,6 +89,10 @@ GEM
       hitimes
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.2)
+    unf_ext (0.0.7.2-x86-mingw32)
     websocket-driver (0.6.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -81,6 +103,7 @@ PLATFORMS
 
 DEPENDENCIES
   celluloid-io
+  rest-client
   slack-ruby-bot
 
 BUNDLED WITH
